@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
 
-<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="javafx_fantasy_translator.FXMLDocumentController">
+<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx_fantasy_translator.FXMLDocumentController">
    <children>
+      <TextField fx:id="fieldTesto" />
       <Button fx:id="btnTranslate" layoutX="211.0" layoutY="45.0" mnemonicParsing="false" text="Button" />
       <ComboBox fx:id="cmLingue" layoutX="11.0" layoutY="88.0" prefWidth="150.0" />
-      <TextField fx:id="fieldTesto" layoutX="11.0" layoutY="45.0" />
+      <HBox fx:id="hbContainer" layoutY="113.0" prefHeight="150.0" prefWidth="320.0">
+         <children>
+            <ImageView fx:id="imTraduzione" fitHeight="117.0" fitWidth="202.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </HBox>
    </children>
 </AnchorPane>
