@@ -3,6 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+
 package javafx_fantasy_translator;
 
 import java.net.URL;
@@ -28,10 +29,11 @@ public class FXMLDocumentController implements Initializable {
     @FXML
     private TextField fieldTesto;
 
-    
     @Override
-    public void initialize(URL url, ResourceBundle rb) {
-        // TODO
-    }    
-    
+    public void initialize(URL location, ResourceBundle resources) {
+       
+    }
+
 }
+
+
