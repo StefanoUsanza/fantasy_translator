@@ -36,9 +36,10 @@ public class FXMLDocumentController implements Initializable {
     private HBox hbContainer;
 
     private Image image;
+    private ImageView imTraduzione[] = new ImageView[15];
+    
     @FXML
     private ImageView imTraduzione0;
-    private ImageView imTraduzione[] = new ImageView[10];
     @FXML
     private ImageView imTraduzione1;
     @FXML
@@ -51,6 +52,22 @@ public class FXMLDocumentController implements Initializable {
     private ImageView imTraduzione5;
     @FXML
     private ImageView imTraduzione6;
+    @FXML
+    private HBox hbContainer1;
+    @FXML
+    private ImageView imTraduzione7;
+    @FXML
+    private ImageView imTraduzione8;
+    @FXML
+    private ImageView imTraduzione9;
+    @FXML
+    private ImageView imTraduzione10;
+    @FXML
+    private ImageView imTraduzione11;
+    @FXML
+    private ImageView imTraduzione12;
+    @FXML
+    private ImageView imTraduzione13;
     
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -58,6 +75,16 @@ public class FXMLDocumentController implements Initializable {
             imTraduzione[1]=imTraduzione1;
             imTraduzione[2]=imTraduzione2;
             imTraduzione[3]=imTraduzione3;
+            imTraduzione[4]=imTraduzione4;
+            imTraduzione[5]=imTraduzione5;
+            imTraduzione[6]=imTraduzione6;
+            imTraduzione[7]=imTraduzione7;
+            imTraduzione[8]=imTraduzione8;
+            imTraduzione[9]=imTraduzione9;
+            imTraduzione[10]=imTraduzione10;
+            imTraduzione[11]=imTraduzione11;
+            imTraduzione[12]=imTraduzione12;
+            imTraduzione[13]=imTraduzione13;
         
        cmLingue.getItems().addAll(
                "Draconico",
@@ -70,8 +97,10 @@ public class FXMLDocumentController implements Initializable {
     private void Action_traduci(ActionEvent event) {
         String s = fieldTesto.getText();
         for (int i=0; i<s.length(); i++){
-            Image image = new Image("images/" +s.charAt(i) +".png");
-            imTraduzione[i].setImage(image);
+            if(i<14){
+                Image image = new Image("images/" +s.charAt(i) +".png");
+                imTraduzione[i].setImage(image);
+            }
         }
     }
 

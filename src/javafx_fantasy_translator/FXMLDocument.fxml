@@ -12,15 +12,26 @@
       <TextField fx:id="fieldTesto" />
       <Button fx:id="btnTranslate" layoutX="211.0" layoutY="45.0" mnemonicParsing="false" onAction="#Action_traduci" text="Button" />
       <ComboBox fx:id="cmLingue" layoutX="11.0" layoutY="88.0" prefWidth="150.0" />
-      <HBox fx:id="hbContainer" layoutY="113.0" prefHeight="150.0" prefWidth="320.0">
+      <HBox fx:id="hbContainer" alignment="TOP_CENTER" layoutY="113.0" prefHeight="50.0" prefWidth="320.0">
          <children>
             <ImageView fx:id="imTraduzione0" fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true" />
             <ImageView fx:id="imTraduzione1" fitHeight="45.0" fitWidth="45.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
             <ImageView fx:id="imTraduzione2" fitHeight="45.0" fitWidth="45.0" layoutX="55.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="imTraduzione5" fitHeight="45.0" fitWidth="45.0" layoutX="190.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
             <ImageView fx:id="imTraduzione3" fitHeight="45.0" fitWidth="45.0" layoutX="100.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
             <ImageView fx:id="imTraduzione4" fitHeight="45.0" fitWidth="45.0" layoutX="145.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
-            <ImageView fx:id="imTraduzione5" fitHeight="45.0" fitWidth="45.0" layoutX="190.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
             <ImageView fx:id="imTraduzione6" fitHeight="45.0" fitWidth="45.0" layoutX="235.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </HBox>
+      <HBox fx:id="hbContainer1" alignment="TOP_CENTER" layoutY="163.0" prefHeight="50.0" prefWidth="320.0">
+         <children>
+            <ImageView fx:id="imTraduzione7" fitHeight="45.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="imTraduzione8" fitHeight="45.0" fitWidth="45.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="imTraduzione9" fitHeight="45.0" fitWidth="45.0" layoutX="55.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="imTraduzione10" fitHeight="45.0" fitWidth="45.0" layoutX="190.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="imTraduzione11" fitHeight="45.0" fitWidth="45.0" layoutX="100.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="imTraduzione12" fitHeight="45.0" fitWidth="45.0" layoutX="145.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="imTraduzione13" fitHeight="45.0" fitWidth="45.0" layoutX="235.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
          </children>
       </HBox>
    </children>
