@@ -33,22 +33,46 @@ public class FXMLDocumentController implements Initializable {
     @FXML
     private TextField fieldTesto;
     @FXML
-    private ImageView imTraduzione;
-    @FXML
     private HBox hbContainer;
 
     private Image image;
-    private String name = "elf";
+    @FXML
+    private ImageView imTraduzione0;
+    private ImageView imTraduzione[] = new ImageView[10];
+    @FXML
+    private ImageView imTraduzione1;
+    @FXML
+    private ImageView imTraduzione2;
+    @FXML
+    private ImageView imTraduzione3;
+    @FXML
+    private ImageView imTraduzione4;
+    @FXML
+    private ImageView imTraduzione5;
+    @FXML
+    private ImageView imTraduzione6;
     
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+            imTraduzione[0]=imTraduzione0;
+            imTraduzione[1]=imTraduzione1;
+            imTraduzione[2]=imTraduzione2;
+            imTraduzione[3]=imTraduzione3;
+        
        cmLingue.getItems().addAll(
                "Draconico",
                "Elfico",
                "Nanico"
        );
-       Image image = new Image(name +".png");
-       imTraduzione.setImage(image);
+    }
+
+    @FXML
+    private void Action_traduci(ActionEvent event) {
+        String s = fieldTesto.getText();
+        for (int i=0; i<s.length(); i++){
+            Image image = new Image("images/" +s.charAt(i) +".png");
+            imTraduzione[i].setImage(image);
+        }
     }
 
 }
